@@ -197,6 +197,10 @@ public class ApiServer {
                 .replace("\\", "\\\\")
                 .replace("\"", "\\\"")
                 .replace("\n", " ")
-                .replace("\r", " ");
+                .replace("\r", " ")
+                .replace("\t", " ")
+                .replace("\b", " ")
+                .replace("\f", " ");
     }
+
 }
